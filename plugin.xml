@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-testplugin" version="0.0.1">
+    <name>TestPlugin</name>
+
+    <description>An Android Cordova plugin that allows users to display simple Test messages at the bottom of the screen.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,toast,message,alert</keywords>
+    <repo>https://github.com/meriana08/TestPlugin/Test-PhoneGap-Plugin.git</repo>
+    <issue>https://github.com/meriana08/TestPlugin/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/testplugin.js" name="testplugin">
+        <clobbers target="window.plugins.testplugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="TestPlugin">
+                <param name="android-package" value="com.meriana08.cordova.plugin.TestPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/TestPlugin.java" target-dir="src/com/meriana08/cordova/plugin" />
+    </platform>
+</plugin>
