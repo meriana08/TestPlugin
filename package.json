@@ -1,0 +1,35 @@
+{
+  "name": "cordova-plugin-testplugin",
+  "version": "0.0.1",
+  "description": "An Android Cordova plugin that allows users to display simple Test messages at the bottom of the screen.",
+  "cordova": {
+    "id": "cordova-plugin-testplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meriana08/testplugin.git"
+  },
+  "keywords": [
+    "Toast",
+    "Notification",
+    "Message",
+    "Alert",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Meriana <meriana@cqpratama.id>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meriana08/testplugin/issues"
+  },
+  "homepage": "https://github.com/meriana08/testplugin/"
+}
